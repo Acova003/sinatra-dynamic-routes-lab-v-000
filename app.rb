@@ -36,6 +36,7 @@ class App < Sinatra::Base
     
     case @operation
     when 'add'
+      @operation == +
     erb :operation
   end 
 end 
