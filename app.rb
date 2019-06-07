@@ -34,9 +34,6 @@ class App < Sinatra::Base
     @num1 = params[:number1].to_i
     @num2 = params[:number2].to_i
     
-    case @operation
-    when 'add'
-      @operation == "+"
     erb :operation
   end 
 end 
